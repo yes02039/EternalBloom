@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box; /* Aplicación global de box-sizing: 
+    border-box para asegurar que todos los 
+    elementos de la página se vean afectados por esta regla.*/
+  }
+  
+  body {
+    margin: 12; /* Espaciado interior */
+    background-image: url("fondo\ de\ pagina.jpg");
+    background-size: 120rem;
+    background-position: center center;
+  
+  }
+  
+  .logo1 {
+    float: left; /* Para alinear el logo a la izquierda */
+    margin-right: 15px; /* Espacio entre el logo y otros elementos */
+  }
+  
+  
+  /* encbezado*/
+  .encabezado {
+    background-color: #F1F1F1;
+    text-align: center;  /* Centrar los botones horizontalmente */
+    padding: 30px; /* Espaciado interior */
+    background-image: url("imagen\ de\ fondo\ 2.jpg"); /* fondo de la imagen */
+  
+  /* encbezado*/
+  
+  }
+  
+  
+  /* barra de navegacion */
+  .menu{
+    overflow: hidden;
+    background-color:  #003300;
+  }
+  
+  .menu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  
+  .menu a:hover {
+    background-color: #A5D6A7 ;
+    color: beige; 
+  
+  
+    /* barra de navegacion */
+  }
+
+
+  
+  /* texto de la pagina es decir contenido */
+  .textopag {
+    border: 1px solid gray;
+    padding: 8px; /* Espaciado interior */
+    text-align: center; /* Centrar los botones horizontalmente */
+  
+  }
+  
+   .primer {
+    text-align: center; /* Centrar los botones horizontalmente */
+    text-transform: uppercase;
+    color: #4CAF50; /* Color del texto */
+  }
+  .segundo  {
+    text-transform: uppercase;
+    color: #6a4caf; /* Color del texto */
+  }
+  .tercero {
+    text-align: center; /* Centrar los botones horizontalmente */
+    text-transform: uppercase;
+    color: black; /* Color del texto */
+  }
+  
+  .CUARTO {
+    text-align: center;  /* Centrar los botones horizontalmente */
+    text-transform: uppercase;
+    color: black;
+  }
+  
+   p {
+   
+    text-align: justify;  /* Centrar los botones horizontalmente */
+    letter-spacing: 3px;
+  }
+  ul{
+  
+    text-align: justify;  /* Centrar los botones horizontalmente */
+    letter-spacing: 3px;
+  }
+
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  form {
+    max-width: 10px;
+    margin: 1 auto;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 30px;
+    box-shadow: 2px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+
+
+  /* Estilo para el botón de regreso */
+  .btn-regreso {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+ 
+  
+  /* Estilo para los campos de entrada */
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para el botón */
+  .button {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón */
+  }
+  
+  /* Estilo para los enlaces */
+  a {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Heredar color */
+  }
+  
+  
+
+
+  /* pie de pagina*/
+footer {
+    background-image: url("imagen\ de\ fondo\ 2.jpg");
+    color: black; /* Color del texto */
+    padding: 1px; /* Espaciado interior */
+  }
+  .footer-content {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuir los elementos de manera uniforme */
+    align-items: center; /* Centrar verticalmente los elementos */
+    
+  }
+  
+  .logo img, .contact-info img {
+    width: 40px; /* Ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  .logo img {
+    width: 150px; /* Ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 2px; /* Espacio entre imágenes */
+  }
+  
+  .contact-info p {
+    margin: 10px 5; /* Margen entre párrafos */
+  
+  }
+  /* final de pie de pagina*/
+  
+  

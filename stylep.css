@@ -1,0 +1,189 @@
+
+
+* {  
+  box-sizing: border-box; /* Aplicación global de box-sizing: 
+  border-box para asegurar que todos los                          /****estilo d eproductos ******
+  elementos de la página se vean afectados por esta regla.*/
+}
+
+body {
+  margin: 12; /* Espaciado interior */
+  background-image: url("fondo\ de\ pagina.jpg");
+  background-size: 122rem;
+  background-position: center center;
+
+}
+
+.logo1 {
+  float: left; /* Para alinear el logo a la izquierda */
+  margin-right: 15px; /* Espacio entre el logo y otros elementos */
+}
+
+
+/* encbezado*/
+.encabezado {
+  background-color: #F1F1F1;
+  text-align: center;  /* Centrar los botones horizontalmente */
+  padding: 30px; /* Espaciado interior */
+  background-image: url("imagen\ de\ fondo\ 2.jpg"); /* fondo de la imagen */
+
+/* encbezado*/
+
+}
+
+
+/* barra de navegacion */
+.menu{
+  overflow: hidden;
+  background-color:  #003300;
+}
+
+.menu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+
+.menu a:hover {
+  background-color: #A5D6A7 ;
+  color: beige; 
+
+
+  /* fin de barra de navegacion */
+}
+
+/*  inicio de texto de la pagina es decir contenido */
+.textopag {
+    border: 1px solid gray;
+    padding: 8px; /* Espaciado interior */
+    text-align: center; /* Centrar los botones horizontalmente */
+  
+  }
+  
+  .primero {
+   
+    text-transform: uppercase;
+    color: rgb(18, 14, 231); /* Color del texto */
+  }
+  .segundo {
+    text-align: center; /* Centrar los botones horizontalmente */
+    text-transform: uppercase;
+    color: #4CAF50; /* Color del texto */
+  }
+
+  p {
+    /* Centrar los botones horizontalmente */
+    text-align: justify;  /* Centrar los botones horizontalmente */
+    letter-spacing: 3px;
+  }
+  ul{
+  
+    text-align: justify;  /* Centrar los botones horizontalmente */
+    letter-spacing: 3px;
+  }
+ /* fin de texto de la pagina es decir contenido */ 
+
+  /*inico de contenido de galeria*/ 
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .description {
+    text-align: center;
+  }
+
+   /*inico de contenido de galeria*/ 
+
+   .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery-item {
+    width: 220px; /* Ancho fijo para cada elemento de la galería */
+    margin: 10px;
+    text-align: center;
+  }
+  .gallery img {
+    width: 200px; /* Ancho fijo para todas las imágenes */
+    height: auto;
+    cursor: pointer;
+  }
+  .description {
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+  }
+
+  /* inicio de codigo de botones*/
+
+.button-container {
+  text-align: center; /* Centrar los botones horizontalmente */
+  margin-top: 20px; /* Espacio superior opcional */
+}
+
+.button {
+  display: inline-block; /* Colocar los botones en línea */
+  width: 170px; /* Ancho del botón */
+  height: 50px; /* Altura del botón */
+  line-height: 50px; /* Alinear el texto verticalmente */
+  padding: 0 20px; /* Espaciado interior lateral */
+  margin: 5px; /* Margen entre botones */
+  font-size: 16px; /* Tamaño de la fuente */
+  color: white; /* Color del texto */
+  background-color: #000002; /* Color de fondo */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none; /* Sin subrayado */
+  text-align: center; /* Alinear el texto horizontalmente */
+  cursor: pointer; /* Cursor de puntero */
+  transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* fin de codigo de botones*/
+
+
+   /* pie de pagina*/
+footer {
+    background-image: url("imagen\ de\ fondo\ 2.jpg");
+    color: black; /* Color del texto */
+    padding: 1px; /* Espaciado interior */
+  }
+  .footer-content {
+    display: flex; /* Usar flexbox para alinear los elementos */
+    justify-content: space-between; /* Distribuir los elementos de manera uniforme */
+    align-items: center; /* Centrar verticalmente los elementos */
+    
+  }
+  
+  .logo img, .contact-info img {
+    width: 40px; /* Ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  .logo img {
+    width: 150px; /* Ancho del logo */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 2px; /* Espacio entre imágenes */
+  }
+  
+  .contact-info p {
+    margin: 10px 5; /* Margen entre párrafos */
+  
+  }
+  /* final de pie de pagina*/

@@ -1,0 +1,106 @@
+<html>
+    <head>
+   
+            <div class="logo1">
+                <img src="urna.png" alt="Logo de la empresa" width="140" height="164">
+            </div>
+    
+        <title>Formulario</title> 
+        <link rel="stylesheet" href="formulario2.css"> <!----llamado de la hoja de estilo  -->
+   
+        <body>
+
+            <div class="encabezado"> <!----en cabezado de la pagina web donde va el titulo -->
+                <h1 style="color: black;">ETERNAL BLOOM</h1>
+              </div> 
+
+<!----barra de navegacion -->
+
+<div class="menu">
+    <a href="index.html">pagina principal</a>
+    <a href="productos.html">productos</a>
+    <a href="acercade.html">acerca de nosotros</a>
+    <a href="formulario2.html">formulario</a>
+  </div>
+
+              <!----contenido de la pagina  -->
+              
+              <texttodepagina>
+                <h1 class="primero">¡¡..contactanos..!! </h1>
+                <p style="font-size: 20px;" >llena correctamente el siguiente formulario y nos pondremos
+                    en contacto contigo inmediatamente.</p>
+
+                      <!----contenido del formulario   -->
+                      <table id="customers">
+                        
+                    <form action="#" method="POST" onsubmit="return enviarSolicitud()">
+                      <label for="nombre">Nombre completo:</label>
+                      <input type="text" id="nombre" name="nombre" required>
+                      
+                      <label for="telefono">Número de teléfono:</label>
+                      <input type="text" id="telefono" name="telefono" required>
+                      
+                      <label for="email">Correo electrónico:</label>
+                      <input type="email" id="email" name="email" required>
+
+                      <label for="message">Mensaje:</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                  
+                      <br></br>
+                      
+
+                   
+
+                      <center><input type="submit" value="Enviar">
+                  
+                      <a href="productos.html" class="btn-regreso">Regresar</a></center>
+                    </form>
+                  
+                    <script>
+                      function enviarSolicitud() {
+                        // Aquí puedes agregar la lógica para enviar la solicitud al servidor
+                  
+                        // Muestra el mensaje de solicitud enviada
+                        alert("Solicitud enviada");
+                  
+                        // Limpia los campos del formulario
+                        document.getElementById("nombre").value = "";
+                        document.getElementById("direccion").value = "";
+                        document.getElementById("telefono").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("experiencia").value = "";
+                        document.getElementById("disponibilidad").value = "";
+                        document.getElementById("habilidades").value = "";
+                        document.getElementById("referencias").value = "";
+                        document.getElementById("expectativas").value = "";
+                        document.getElementById("alergias").value = "";
+                  
+                        // Devuelve false para evitar que el formulario se envíe normalmente
+                        return false;
+                      }
+                    </script>
+                  
+                </body>
+   
+            
+                <footer>
+                    <div class="footer-content">
+                        <div class="logo">
+                            <img src="urna.png" alt="Logo de la empresa"> 
+                        </div>
+                        <div class="contact-info">
+                            <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank">
+                                <img src="instagram.png" alt="Logo de Instagram">
+                            </a>
+                        </div>
+                        <p>Teléfono:52-5587-0191-53</p>
+                            <p>Correo electrónico:eternalbloom@gmail..com</p>
+                            <p>Dirección: tlanepantla de baz av pajaritos </p>
+                    </div>
+                    <center><h6>echo por barcenas hernande yesica britani 15/06/19</h6></center>
+                    
+                    </footer>
+                    
+                    </head>
+                    </html>
+                    

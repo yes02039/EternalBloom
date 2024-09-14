@@ -1,0 +1,123 @@
+<html>
+    <head>
+   
+            <div class="logo1">
+                <img src="urna.png" alt="Logo de la empresa" width="140" height="164">
+            </div>
+    
+        <title>inicio de sesion</title> 
+        <link rel="stylesheet" href="styleinicio.css"> <!----llamado de la hoja de estilo  -->
+   
+        <body>
+
+            <div class="encabezado"> <!----en cabezado de la pagina web donde va el titulo -->
+                <h1 style="color: black;">ETERNAL BLOOM</h1>
+              </div> 
+
+<!----barra de navegacion -->
+
+              <div class="menu">
+                <a href="index.html"></a>
+             
+              </div>
+
+<!----contenido de la pagina  -->
+
+   <texttodepagina>
+    <h1 class="tercero ">¡¡...Bienvedidos..!! </h1>
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+
+<body>
+    <div class="login-container">
+        <h1>Inicio de Sesión</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="captcha">Ingrese el texto de la imagen:</label>
+                <div id="captchaImage">ABCD</div>
+                <input type="text" id="captcha" name="captcha" required>
+            </div>
+            <button type="submit" id="loginButton">Iniciar Sesión</button>
+            <p a href="index.html"></a></p>
+        </form>
+    </div>
+
+    <script>
+        // Generación aleatoria del texto CAPTCHA
+        function generateCaptchaText(length) {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let captchaText = '';
+            for (let i = 0; i < length; i++) {
+                captchaText += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return captchaText;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const captchaImage = document.getElementById('captchaImage');
+            const captchaText = generateCaptchaText(4);
+            captchaImage.textContent = captchaText;
+        });
+
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const captchaInput = document.getElementById('captcha').value;
+            const captchaImageText = document.getElementById('captchaImage').textContent;
+
+            if (captchaInput === captchaImageText) {
+                // Redirigir a la página principal si el CAPTCHA es correcto
+                window.location.href = 'pagina principal.html';
+            } else {
+                alert('CAPTCHA incorrecto. Inténtalo de nuevo.');
+                // Regenerar el CAPTCHA en caso de error
+                const newCaptchaText = generateCaptchaText(4);
+                document.getElementById('captchaImage').textContent = newCaptchaText;
+            }
+        });
+    </script>
+</body>
+
+    
+     
+<!----contenido de las imagenes de la pagina principal  -->   
+        
+        <center><div class="image-container">
+            <img src="imagen1.jpg" alt="Imagen 1" width="250" height="250">
+        </div>
+
+
+    <!---imagenes que te direcciona a los productos al oprimir los botones -->
+
+
+   <!--contenido de pie de pagina donde se pueden contactar de la pagina principal -->
+
+   <footer>
+    <div class="footer-content">
+        <div class="logo">
+            <img src="urna.png" alt="Logo de la empresa"> 
+        </div>
+        <div class="contact-info">
+            <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank">
+                <img src="instagram.png" alt="Logo de Instagram">
+            </a>
+        </div>
+        <p>Teléfono:52-5587-0191-53</p>
+        <p>Correo electrónico:eternalbloom@gmail..com</p>
+        <p>Dirección: tlanepantla de baz av pajaritos </p>
+    </div>
+    <center><h6>echo por barcenas hernande yesica britani 15/06/19</h6></center>
+    
+    </footer>
+    
+  
+    
+    </head>
+</html>
